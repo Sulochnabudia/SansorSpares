@@ -1,0 +1,80 @@
+.Navbar-link {
+  border-radius: 8px;
+  padding: 0px 2px;
+  font-weight: 500;
+  transition: all ease-in-out 0.5s;
+}
+
+.Navbar-link:hover {
+  background-color: #378CE7;
+}
+
+.Footer-reserved {
+  background-color: #0e2e52;
+}
+
+.Footer-body {
+  background-color: #124076;
+  color: whitesmoke;
+}
+
+.Footer-body img {
+  height: 80px;
+}
+
+.Footer-body ul {
+  list-style: none;
+}
+
+.Footer-body li {
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+
+.Signup-container {
+  background-image: url("../public/images/carousel_img5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Signup-box {
+  background: transparent;
+  background-color: rgba(77, 78, 97, 0.887);
+  border-radius: 8px;
+}
+
+.Signup-content {
+  z-index: 2;
+}
+
+.Signup-content input {
+  background-color: transparent;
+  width: 300px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+.Signup-content input:focus {
+  outline: none;
+}
+
+.Signup-content input::placeholder {
+  color: white;
+}
+
+.Form-btn {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  padding: 8px;
+  font-weight: 500;
+}
+
+.Login-container {
+  background-image: url("../public/images/carousel_img7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
