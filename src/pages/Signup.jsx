@@ -25,7 +25,7 @@ function Signup() {
 
     //Handle Input values
     const handleInput = (e) => {
-        if (e.target.name == "confirmPsd") {
+        if (e.target.name === "confirmPsd") {
             setConfirmPassword(e.target.value)
         } else {
             setUserDetail({ ...userDetail, [e.target.name]: e.target.value })
@@ -34,7 +34,7 @@ function Signup() {
 
     //Handle SignUp button
     const handleSignUp = () => {
-        if (verifyLength && errorMessage.length == 0) {
+        if (verifyLength && errorMessage.length === 0) {
             if (checkEmail()) {
                 setErrorMessage('Email already exist');
             } else {
@@ -54,7 +54,7 @@ function Signup() {
     function checkEmail() {
         for (let i = 0; i < previousUsers.length; i++) {
             const user = previousUsers[i]
-            if (user.email.toLowerCase() == userDetail.email.toLowerCase()) {
+            if (user.email.toLowerCase() === userDetail.email.toLowerCase()) {
                 return true
             }
         }
@@ -67,7 +67,7 @@ function Signup() {
             if (!userDetail.email.includes("@gmail.com")) {
                 setErrorMessage("Enter valid email id")
             }
-            else if (confirmPassword != userDetail.password) {
+            else if (confirmPassword !== userDetail.password) {
                 setErrorMessage("Password don't match")
             } else {
                 setErrorMessage("")

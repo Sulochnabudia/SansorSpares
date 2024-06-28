@@ -51,7 +51,7 @@ function Navbar() {
 
 
                     {
-                        showUser == true
+                        showUser === true
                         &&
                         <div className="dropdown" style={{ marginRight: "100px" }}>
                             <button type="button fs-5 text-white" className="btn" data-bs-toggle="dropdown" aria-expanded="false">
@@ -66,7 +66,7 @@ function Navbar() {
 
                     }
                     {
-                        showUser == false
+                        showUser === false
                         &&
                         <div className='d-flex gap-2'>
                             <Link to="login">

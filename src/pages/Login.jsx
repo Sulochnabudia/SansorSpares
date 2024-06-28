@@ -18,7 +18,7 @@ function Login() {
 
     // Handle Login User button
     const handleLogin = () => {
-        if (verifyLength && errorMessage.length == 0) {
+        if (verifyLength && errorMessage.length === 0) {
             const valid = checkValidity()
             if (typeof valid != "string") {
                 localStorage.setItem("SensorLogin", JSON.stringify(valid))
@@ -57,8 +57,8 @@ function Login() {
     function checkValidity() {
         for (let i = 0; i < regiterUsers.length; i++) {
             const user = regiterUsers[i];
-            if (user.email.toLowerCase() == userDetail.email.toLowerCase()) {
-                if (user.password == userDetail.password) {
+            if (user.email.toLowerCase() === userDetail.email.toLowerCase()) {
+                if (user.password === userDetail.password) {
                     return user
                 } else {
                     return ("Password incorrect");
