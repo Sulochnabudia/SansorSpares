@@ -49,7 +49,7 @@
 
 .Signup-content input {
   background-color: transparent;
-  width: 300px;
+  width: 100%;
   border: 1px solid white;
   color: white;
   border-radius: 20px;
@@ -77,4 +77,16 @@
   background-image: url("../public/images/carousel_img7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .d-flex.flex-md-row {
+    flex-direction: column !important;
+  }
+
+  .img-fluid {
+    width: 100% !important;
+    height: auto !important;
+  }
 }
